@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row photos-wrap">
+        <div class="photos">
+            <photo *ngFor="let p of photos" [photo]="p" class="photos__photo"></photo>
+            <h1 *ngIf="loader" class="loader">Loading....</h1>
+            <div class="btn-wrap" *ngIf="currentAlbum < lastAlbum">
+                <button (click)="loadNextAlbum()" class="btn">NextAlbum</button>
+            </div>
+        </div>
+    </div>
+</div>

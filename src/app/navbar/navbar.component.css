@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    .navbar-collapse {
+        height: 0;
+        transition: all 1s;
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .navbar-visible {
+        height: 135px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+

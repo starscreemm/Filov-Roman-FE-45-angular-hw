@@ -1,0 +1,35 @@
+.photos-wrap {
+    display: flex;
+    justify-content: center;
+}    
+.photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.photos__photo {
+    display: inline-block;
+    margin: 1em;
+    cursor: pointer;
+}
+
+.btn-wrap {
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    background-color: black;
+    color: #fff;
+    width: 10em;
+    height: 5em;
+    border: 0;
+    margin: 2rem auto;
+}
+
+.loader {
+    width: 100%;
+    text-align: center;
+}

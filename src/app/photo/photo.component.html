@@ -1,0 +1,14 @@
+<img src="{{photo.thumbnailUrl}}" (click)="getBigPhoto(photo.id)" alt="">
+<div class="big-photo" [class.active]='active'>
+    <div class="overlay"></div>
+    <div class="big-photo__photo-background" *ngIf="active">
+        <div class="big-photo__photo">
+            <img src="{{bigPhoto.url}}" alt="">
+        </div>
+        <button (click)="delete()" class="btn-close">
+            <span class="btn-close__line btn-close__first-bar"></span>
+            <span class="btn-close__line btn-close__second-bar"></span>
+        </button>
+    </div>
+</div>
+

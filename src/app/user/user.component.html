@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h3>{{user.id}}</h3>
+      <h1>{{user.name}}</h1>
+      <p>{{user.email}}</p>
+      <br>
+      <br>
+      <br>
+      <div>
+        <h4 *ngFor="let a of albums" (click)="getPhotos(a.id)">
+          {{a.title}}
+        </h4>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h1 *ngIf="!photos">choose album</h1>
+      <h1 *ngIf="photosLoad">LOADING PHOTOS....</h1>
+      <div *ngIf="!photosLoad">
+        <img *ngFor="let p of photos" src="{{p.thumbnailUrl}}" alt="">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="container">
+  <h2 *ngIf="load">LOADING ...</h2>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let u of users">
+            <td>{{u.id}}</td>
+            <td>
+              <a routerLink="/users/{{u.id}}">{{u.name}}</a>
+              
+            </td>
+            <td>{{u.email}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
